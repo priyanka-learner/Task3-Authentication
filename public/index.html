@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Task 3 Authentication</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <main class="auth-container">
+        <div class="auth-card">
+            <h1>Welcome Back!</h1>
+            <p class="subtitle">Login to access your account</p>
+
+            <form id="loginForm">
+                <label for="loginEmail">Email Address</label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="loginPassword">Password</label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <button type="submit" id="loginButton">
+                    Login
+                </button>
+
+                <p id="loginMessage" class="message" role="status"></p>
+            </form>
+
+            <p class="switch-page">
+                Don't have an account?
+                <a href="register.html">Register here</a>
+            </p>
+        </div>
+    </main>
+</body>
+</html>
